@@ -52,7 +52,7 @@ module.exports = function (grunt) {
                 },
 
                 files: {
-                    'dest/style.min.css' : ['src/css/style1.css', 'src/css/style2.css']   // первая строка - output файл. массив из строк, какие файлы конкатенировать и минифицировать.
+                    'dest/style.min.css' : ['src/style/main.css', 'src/style/footer.css']   // первая строка - output файл. массив из строк, какие файлы конкатенировать и минифицировать.
                 }
             }
         },
@@ -63,19 +63,10 @@ module.exports = function (grunt) {
                 tasks: ['jshint', 'concat', 'uglify', 'removelogging']  //при их изменении запускать следующие задачи
             },
             css: {
-                files: ['src/css/*.css'], //следить за всеми css файлами в папке src
+                files: ['src/style/*.css'], //следить за всеми css файлами в папке src
                 tasks: ['cssmin'] //при их изменении запускать следующую задачу
             }
-        },
-
-
-        removelogging: { //описываем работу плагина удаления логов
-            dist: {
-                src: "dest/build.min.js", // файл который надо отчистить от console.log
-                dest: "dest/build.clean.js" // выходной файл, который получим после очистки
-            }
         }
-
 
     });
 
@@ -85,10 +76,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-remove-logging');
-
 
     //регистрируем задачу
-    grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'cssmin', 'removelogging', 'watch']); //задача по умолчанию, просто grunt
+    grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'cssmin', 'watch']); //задача по умолчанию, просто grunt
     grunt.registerTask('test', ['']); //пока пусто, но кто знает, возможно в следующих уроках мы этим воспользуемся :)
 };
