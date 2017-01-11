@@ -1,7 +1,5 @@
-
 {
-  "name" : "test-1-project",
-  "version" : "0.0.1",
+
   "devDependencies" : {
     "grunt" : "latest",
     "grunt-contrib-jshint" : "latest", //плагин jsHint, для проверки кода на ошибки
