@@ -1,0 +1,315 @@
+html {
+    /*position: relative;*/
+    /*min-height: 100%;*/
+}
+body{
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 14px;
+    /*min-width: 320px;*/
+    position: relative;
+
+}
+header{
+    min-height: 50px;
+    /*width:100%;*/
+    background-color: #333333;
+}
+
+
+.logo_wrap{
+    display: flex;
+    align-items: center;
+    height: 50px;
+   }
+.logo{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.header_right{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.btn-red{
+    background-color: #f82424;
+    border:1px solid #f82424;
+    border-radius: 2px;
+    height: 25px;
+    width: 100px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-shadow: 1px -1px 2px #ac1b1b;
+    color: #ffffff;
+}
+
+.eng{
+    background-image:url(../images/eng.jpg) ;
+    height: 10px;
+    width: 15px;
+}
+.spain{
+    background-image: url(../images/sp.jpg);
+    height: 10px;
+    width: 15px;
+}
+.languages{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row_header{
+
+}
+
+.toggle-bg{
+
+    background: #2a2a2a; /* Вам понадобится видеть область с тумблером, но не стесняйтесь изменить цвет */
+
+    display: block; /* ...Чтобы можно было установить высоту и ширину */
+
+    float: left; /* ...Чтобы он не занимал всю ширину страницы */
+
+    height: 12px; /* Если хотите, можно это попозже изменить */
+
+    position: relative; /* Требуется, чтобы тумблер мог передвигаться */
+
+    width: 25px; /* Это тоже можно позже изменить */
+    border-radius: 25px;
+    /*background: linear-gradient(to bottom, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);*/
+    box-shadow: 0 -2px 0 #303030, inset 2px 0 2px #555, inset 0 1px 0 #777, inset 0 1px 5px #555;
+}
+
+
+
+.toggle-bg input{
+
+      height: 28px;
+
+      left: 0;
+
+      margin: 0; /* Сбросьте поля и отступ */
+
+      opacity: 0; /* Невидим! */
+
+      padding: 0;
+
+      position: absolute;
+
+      top: -10px; /* Сдвиньте по вертикали */
+
+      width: 36px;
+
+      z-index: 2; /* Нам нужно, чтобы вход input находился сверху span.switch, которому мы назначим z-index в 1 */
+  }
+
+.switch{
+
+    background:  radial-gradient(ellipse at center,
+    rgba(194,194,194,1) 29%,
+    rgba(194,194,194,1) 39%,
+    rgba(144, 141, 141,1) 48%,
+    rgba(107,107,107,1) 82%);
+      display: block;
+
+      float: left;
+
+      height: 12px;
+
+      left: -1px; /* Это – начальная точка. При добавлении border radius показывается немного фона, если использовать left: 0;, поэтому лучше всего применить -1px.*/
+
+      position: relative;
+
+      top: 0px; /* ...Чтобы отцентрировать его по вертикали */
+
+      width: 12px;
+
+      z-index: 1; /* Помните, он должен быть под невидимыми входами inputs */
+    border-radius: 25px;
+    transition: left .2s ease;
+}
+
+.toggle-bg input:checked~.switch
+{ left: -1px; } /* Исходная позиция тумблера */
+
+.toggle-bg input~:checked~.switch
+{ left: 13px; } /* окончательная относительная позиция переключателя */
+
+.toggle-bg input:checked
+{ z-index: 0; }
+.navbar-default{
+    height: 48px;
+    background-color: #dbdbdb;
+    border-bottom: 2px solid #c7c7c7;
+}
+.btn-dropdown{
+    background-color: #f5f5f5;
+    color: #777;
+}
+.city{
+    font-weight: bold;
+    color: #080808;
+}
+.btn-default{
+    font-weight: bold;
+    background-color: #f5f5f5;
+
+}
+main{
+    background-image: url(../images/background.jpg);
+}
+.cl3{
+    background-color: #ffff00;
+}
+.cl4{
+    background-color: #2b669a;
+}
+.cl5{
+    background-color: #ffffff;
+}
+.bread_crumbs{
+
+    background-color: #f7f7f7;
+}
+.full {
+    width: 100%;
+}
+.gap {
+    height: 30px;
+    width: 100%;
+    clear: both;
+    display: block;
+}
+.footer {
+    background: #eeeeee;
+    height: auto;
+    padding-bottom: 30px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #d7d7d7;
+    border-top: 1px solid #dddddd;
+}
+.footer p {
+    margin: 0;
+}
+.footer img {
+    max-width: 100%;
+}
+.footer h3 {
+    border-bottom: 1px solid #b4b8bf;
+    color: #54697e;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 40px 0 10px;
+    text-transform: uppercase;
+}
+.footer ul {
+    font-size: 13px;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 15px;
+    color: #7f8c8d;
+}
+.footer ul li a {
+    padding: 0 0 5px 0;
+    display: block;
+}
+.footer a {
+    color: #78828d
+}
+.supportLi h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: normal;
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+}
+.newsletter-box input#appendedInputButton {
+    background: #FFFFFF;
+    display: inline-block;
+    float: left;
+    height: 30px;
+    clear: both;
+    width: 100%;
+}
+.newsletter-box .btn {
+    border: medium none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    height: 40px;
+    padding: 0;
+    width: 100%;
+    color: #fff;
+}
+.newsletter-box {
+    overflow: hidden;
+}
+
+.footer-bottom {
+    background: #d9d9d9;
+    border-top: 1px solid #cbcbcb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer-bottom p.pull-left {
+    padding-top: 6px;
+}
+.payments {
+    font-size: 1.5em;
+}
+.photos {
+    width: 195px;
+    height: 145px;
+}
+input[name="raz"] {
+    display: none;
+}
+
+.gallery {
+    position: relative;
+    padding-top: 70%;
+    margin: 10px;
+    line-height: 0;
+    background: no-repeat 50% 0;
+    display: flex;
+}
+
+.gallery label {
+    width: 20%;
+    height: 4em;
+    margin-bottom: -4em;
+    background: no-repeat 50% 50%;
+    background-size: calc(100% - 4px) calc(100% - 4px);
+    cursor: pointer;
+}
+
+.gallery label:hover {
+    background-color: red;
+
+}
+
+#raz1:checked ~ .gallery label:nth-of-type(1),
+#raz2:checked ~ .gallery label:nth-of-type(2),
+#raz3:checked ~ .gallery label:nth-of-type(3),
+#raz4:checked ~ .gallery label:nth-of-type(4),
+#raz5:checked ~ .gallery label:nth-of-type(5)
+
+{
+    /*opacity: .5; cursor: default;*/
+}
+
+#raz1:checked ~ .gallery, .gallery label:nth-of-type(1) {background-image: url("../images/auto1.jpg");}
+#raz2:checked ~ .gallery, .gallery label:nth-of-type(2) {background-image: url("../images/auto2.jpg");}
+#raz3:checked ~ .gallery, .gallery label:nth-of-type(3) {background-image: url("../images/auto3.jpg");}
+#raz4:checked ~ .gallery, .gallery label:nth-of-type(4) {background-image: url("../images");}
+#raz5:checked ~ .gallery, .gallery label:nth-of-type(5) {background-image: url("../");}
+
+
