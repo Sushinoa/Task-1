@@ -1,4 +1,4 @@
-
+@import "footer.css";
 body {
     font-family: Arial, Verdana, sans-serif;
     font-size: 12px;
@@ -51,7 +51,7 @@ header {
 }
 
 .eng {
-    background-image: url(../images/eng.jpg);
+    background-image: url(../../images/eng.jpg);
     background-repeat: no-repeat;
     height: 12px;
     width: 1.5em;
@@ -59,7 +59,7 @@ header {
 }
 
 .spain {
-    background-image: url(../images/sp.jpg);
+    background-image: url(../../images/sp.jpg);
     background-repeat: no-repeat;
     height: 12px;
     width: 1.5em;
@@ -230,7 +230,7 @@ a {
 /*Start main*/
 main {
 
-    background-image: url(../images/background.jpg);
+    background-image: url(../../images/background.jpg);
 }
 
 .container_content {
@@ -384,15 +384,15 @@ img {
 
 /*end main*/
 
-.footer {
-    background: #eeeeee;
-    height: auto;
-    padding-bottom: 30px;
-    position: relative;
-    width: 100%;
-    border-bottom: 1px solid #d7d7d7;
-    border-top: 1px solid #dddddd;
-}
+/*.footer {*/
+    /*background: #eeeeee;*/
+    /*height: auto;*/
+    /*padding-bottom: 30px;*/
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*border-bottom: 1px solid #d7d7d7;*/
+    /*border-top: 1px solid #dddddd;*/
+/*}*/
 
 .footer p {
     margin: 0;
@@ -520,19 +520,19 @@ input[name="raz"] {
 }
 
 #raz1:checked ~ .gallery, .gallery label:nth-of-type(1) {
-    background-image: url("../images/auto1.jpg");
+    background-image: url("../../images/auto1.jpg");
     background-size: 100%;
     margin-bottom: 5px;
 }
 
 #raz2:checked ~ .gallery, .gallery label:nth-of-type(2) {
-    background-image: url("../images/auto2.jpg");
+    background-image: url("../../images/auto2.jpg");
     background-size: 100%;
     margin-bottom: 5px;
 }
 
 #raz3:checked ~ .gallery, .gallery label:nth-of-type(3) {
-    background-image: url("../images/auto3.jpg");
+    background-image: url("../../images/auto3.jpg");
     background-size: 100%;
     margin-bottom: 5px;
 }
@@ -585,31 +585,31 @@ input[name="photo"] {
 }
 
 #photo1:checked ~ .gallery1, .gallery1 label:nth-of-type(1) {
-    background-image: url("../images/auto2.jpg");
+    background-image: url("../../images/auto2.jpg");
     background-size: 100%;
     margin-bottom: 5px;
 }
 
 #photo2:checked ~ .gallery1, .gallery1 label:nth-of-type(2) {
-    background-image: url("../images/auto3.jpg");
+    background-image: url("../../images/auto3.jpg");
     background-size: 100%;
     margin-bottom: 5px;
 }
 
 #photo3:checked ~ .gallery1, .gallery1 label:nth-of-type(3) {
-    background-image: url("../images/auto3.jpg");
+    background-image: url("../../images/auto3.jpg");
     background-size: 100%;
     margin-bottom: 5px;
 }
 
 #photo4:checked ~ .gallery1, .gallery1 label:nth-of-type(4) {
-    background-image: url("../images/auto2.jpg");
+    background-image: url("../../images/auto2.jpg");
     background-size: 100%;
     margin-bottom: 5px;
 }
 
 #photo5:checked ~ .gallery1, .gallery1 label:nth-of-type(5) {
-    background-image: url("../images/auto2.jpg");
+    background-image: url("../../images/auto2.jpg");
     background-size: 100%;
     margin-bottom: 5px;
 }
